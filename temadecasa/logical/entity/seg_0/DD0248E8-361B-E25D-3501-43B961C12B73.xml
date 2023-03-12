@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD0248E8-361B-E25D-3501-43B961C12B73" name="Appointment">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 10:13:07 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Appointment_ID" id="66F08A59-4B4F-EAAD-BA1B-094D541AC548">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-18 12:53:54 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attendance" id="22E9FE1D-F41D-CB0B-BAE7-0DB7A9C3C7AB">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-18 12:47:25 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Appointment_Attendance_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="absent" description=""/>
+<valueDef value="prezent" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Volunteer_ID" id="EC19A93C-2BE5-CF04-921E-F2675D098DAB">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:07:44 UTC</createdTime>
+<generatorID>2E7029D6-5AB3-93FF-010C-2F7BF1ABEB2D</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<referedAttribute>AD839AE4-2748-F04F-9686-7A10E86CDE33</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Requirement_ID" id="69C075FF-42BB-4EF2-E467-3EB89A9B24D4">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:18 UTC</createdTime>
+<generatorID>ABFCB881-5A60-3F73-90AD-B2A039A9FEE6</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<referedAttribute>2621A228-10BA-D87F-AA8E-183D7276957E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="44355F51-E18B-8A60-5F08-A733A596B363" name="Appointment PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-18 12:45:18 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>66F08A59-4B4F-EAAD-BA1B-094D541AC548</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

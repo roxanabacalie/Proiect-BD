@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="286FBA4E-261C-F91F-9114-73849A5CDF75" name="Location">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>B4545C6D-D7C9-60F3-F3C4-CD596FCEF8E6</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Location_ID" id="4BFF2842-89F2-9829-2F84-B4789C3AB34D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>A22661F3-8FB5-D4E1-061B-9E8F4C6BF0AB</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="City" id="032C4566-E196-214E-B53A-1068C2E6025A">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>15BE2B96-B55B-48A7-1163-F9F1B76A61D5</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Location_City_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(city)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="County" id="8AFF149F-7F40-1128-FFE2-0FE5F17A5D54">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>AC4915F2-81FE-B664-0ED5-AA348942F33C</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Location_County_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(county)&gt;2 "/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Street" id="83023DBA-7A4F-E5D9-7E18-483E53CDB121">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>1E9422D7-AA2B-D534-69DC-8720D9DB2765</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Location_Street_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(street)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Number_of_street" id="26857C12-F76F-4045-D2B3-EAEC9200A5B7">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>85E872F1-FC26-C327-15D2-69CD5E977461</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96A4D874-6AC7-70A3-BEF7-2593F8B03604" name="Location_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>6DEE70A2-0BE0-9FD6-1623-1E10B3FE7905</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BFF2842-89F2-9829-2F84-B4789C3AB34D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46741C34-8D34-E87A-7A05-9ACFBA31D59A" name="Location_AllAttributes_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-22 17:23:54 UTC</createdTime>
+<generatorID>8B721C45-58E8-3857-8D73-85FADD9DD53B</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="032C4566-E196-214E-B53A-1068C2E6025A"/>
+<colUsage columnID="8AFF149F-7F40-1128-FFE2-0FE5F17A5D54"/>
+<colUsage columnID="83023DBA-7A4F-E5D9-7E18-483E53CDB121"/>
+<colUsage columnID="26857C12-F76F-4045-D2B3-EAEC9200A5B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

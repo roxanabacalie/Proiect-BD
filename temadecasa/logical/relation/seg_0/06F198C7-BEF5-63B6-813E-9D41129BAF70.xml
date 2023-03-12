@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Location_Event_FK" directorySegmentName="seg_0" id="06F198C7-BEF5-63B6-813E-9D41129BAF70">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:06:52 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<sourcePk>6DEE70A2-0BE0-9FD6-1623-1E10B3FE7905</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este pentru</nameOnSource>
+<nameOnTarget>are loc la</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B4545C6D-D7C9-60F3-F3C4-CD596FCEF8E6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AAE572EF-F81F-0819-378B-8F516315E66C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

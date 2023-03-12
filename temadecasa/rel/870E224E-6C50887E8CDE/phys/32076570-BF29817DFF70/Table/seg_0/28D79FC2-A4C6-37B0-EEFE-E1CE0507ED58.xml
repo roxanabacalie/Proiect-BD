@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Department" directorySegmentName="seg_0" id="28D79FC2-A4C6-37B0-EEFE-E1CE0507ED58">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Department_ID" id="7373E8C7-96B0-F381-742C-E685E25BE96D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Department_Name" id="DE986BF1-66F0-820F-8422-EF2EC976C12B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Department_PK" id="09E3FEE3-497C-29B1-31F7-B601AC5EAADD">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Department_Department_Name_uk" id="5C14B0F8-C5D6-64E5-4104-E3C47654317D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-23 11:28:34 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

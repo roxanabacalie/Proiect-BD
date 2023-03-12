@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AAE572EF-F81F-0819-378B-8F516315E66C" name="Event">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 17:00:40 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Event_ID" id="C92E4C2F-3950-B97F-C6C9-D27ACB9809CC">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 10:17:03 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StartTime" id="89A6379D-C311-081A-6812-39BCFED952CA">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 10:08:17 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EndTime" id="1D3EEB88-6DD2-CE41-8EAF-0275B9703AB4">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 10:25:40 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Location_ID" id="4D8A7035-00E0-0E59-3FC5-7B507AB5D30B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:06:52 UTC</createdTime>
+<generatorID>06F198C7-BEF5-63B6-813E-9D41129BAF70</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<referedAttribute>A22661F3-8FB5-D4E1-061B-9E8F4C6BF0AB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CE6D23E4-02B6-ABB1-97E2-E436B054E00D" name="Event PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:36:15 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C92E4C2F-3950-B97F-C6C9-D27ACB9809CC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

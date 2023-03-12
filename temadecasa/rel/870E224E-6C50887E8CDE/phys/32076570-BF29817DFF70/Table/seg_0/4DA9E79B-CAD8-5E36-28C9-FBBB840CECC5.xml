@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Volunteer" directorySegmentName="seg_0" id="4DA9E79B-CAD8-5E36-28C9-FBBB840CECC5">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="First_Name" id="0416983F-FD1C-F3F0-74B4-ECC5A0EF0837">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="City" id="35EC8D5C-571F-AEC9-E104-53777D404F5E">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Faculty" id="41EF4B2E-E3A5-809A-A45C-2167FB1D7B4B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Last_Name" id="626335E8-A999-B14B-E694-1A7AAA99AE75">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Email" id="7AA1BCD2-BF9E-0C28-DF9E-6D63E1FF0E24">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Department_ID" id="7D64C22F-2DFE-1C7D-41CE-5396AD1D9CB0">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Volunteer_ID" id="7E2CE3B7-6C9D-1984-46D5-F565B3E2E582">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Phone_Number" id="BE115115-95B2-E35E-1BE3-9F70D66B33C3">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Department_Volunteer_FK" id="76D3786B-8F6B-B374-9BC3-A87D52999F8D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Volunteer_PK" id="3A216B8C-3BFC-63E6-5B6C-C56AFB0E660A">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Volunteer_Phone_uk" id="6FD0A396-6DF3-137D-0611-AE7105E9DE89">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-16 01:17:18 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Volunteer_Email_uk" id="967BB22D-C65B-4FF4-C446-66AAC6DF235E">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-16 01:17:18 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<style>
+
+@font-face {
+  font-family: 'SansationLight';
+  src: url('./FontSansationLight/SansationLight.eot');
+  src: local('SansationLight'), url('./FontSansationLight/SansationLight.woff') format('woff'), url('./FontSansationLight/SansationLight.ttf') format('truetype');
+}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'SansationLight' !important;
+    background: #0F1F2E;
+}
+
+/* Style tab links */
+.tablink {
+	font-weight: bold;
+	font-family: 'SansationLight' !important;
+    background-color: #306A9C;
+    color: #ffffff;
+    float: center;
+    border: #ffffff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 0px;
+    font-size: 17px;
+    width: 14%;
+}
+
+.tablink:hover {
+    background-color: #5393CA;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Consilieri {background-color: rgb(22,22,22);}
+#Partide {background-color: rgb(22,22,22);}
+#Comisii {background-color: rgb(22,22,22);}
+#Pontaje {background-color: rgb(22,22,22);}
+</style>
+</head>
+<body>
+
+  <a href="volunteers"><button class="tablink" >Volunteers</button></a>
+  <a href="departments"><button class="tablink">Departments</button></a>
+  <a href="events"><button class="tablink">Events</button></a>
+  <a href="locations"><button class="tablink">Locations</button></a>
+  <a href="requirements"><button class="tablink">Requirements</button></a>
+  <a href="appointments"><button class="tablink">Appointments</button></a>
+  <a href="observations"><button class="tablink">Observations</button></a>
+  
+  <div id="Consilieri" class="tabcontent">
+  <center>
+      <br>
+      <h1 id="h3">Editeaza observatiile</h1>
+      <br><br><br>
+      <form class="was-validated" method="POST" action="/editObservation">
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <label for="validationServer01">ID observatie</label>
+                <select name="observation_id" class="custom-select d-block my-3">
+                  <option value="{{observation_id}}" required>{{observation_id}}</option>
+                  {% for com in observations %}
+                    <option value={{com}}>{{com}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Message</label>
+            <input name="message" type="text" class="form-control is-valid" id="validationServer01" value="{{message}}" required>
+          </div>
+
+        </div>
+        <button class="btn btn-primary" type="submit">Editeaza observatiile</button>
+      </form>
+
+  </center>
+
+  <script type="text/javascript">
+  function checkDuplicates() {
+        var selects = document.getElementsByTagName('select');
+        var values = [];
+        for(i=0;i<selects.length;i++) {
+            var select = selects[i];
+            if(values.indexOf(select.value)>-1) {
+                alert('Comisia ' + i + ' a fost aleasa de mai multe ori!'); //if duplicates found we are returning. without save and no need to continue.
+                return false;
+            }
+            values.push(select.value)
+        }
+        return true;
+    
+    }
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28D79FC2-A4C6-37B0-EEFE-E1CE0507ED58" name="Department">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>C95D8CE9-8F57-93CE-3FE1-D8D4F4B0A9B2</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Department_ID" id="7373E8C7-96B0-F381-742C-E685E25BE96D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>9B520E7A-9594-1E55-1A94-35966A9A9C1F</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_Name" id="DE986BF1-66F0-820F-8422-EF2EC976C12B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>EF4BF76F-4A5F-60B1-1527-085DDD121BC6</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Department_Department_Name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Department_Name) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09E3FEE3-497C-29B1-31F7-B601AC5EAADD" name="Department_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>9B30A153-C8F6-96AA-A440-89F968472A37</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7373E8C7-96B0-F381-742C-E685E25BE96D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C14B0F8-C5D6-64E5-4104-E3C47654317D" name="Department_Department_Name_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-22 17:23:54 UTC</createdTime>
+<generatorID>0C36F8E9-2BA7-9B15-E7A6-1405EB6B2B11</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE986BF1-66F0-820F-8422-EF2EC976C12B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

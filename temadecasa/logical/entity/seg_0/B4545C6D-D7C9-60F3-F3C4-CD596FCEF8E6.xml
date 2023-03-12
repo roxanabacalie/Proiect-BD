@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4545C6D-D7C9-60F3-F3C4-CD596FCEF8E6" name="Location">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:04:59 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Location_ID" id="A22661F3-8FB5-D4E1-061B-9E8F4C6BF0AB">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:17:27 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="City" id="15BE2B96-B55B-48A7-1163-F9F1B76A61D5">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:05:08 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Location_City_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(city)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="County" id="AC4915F2-81FE-B664-0ED5-AA348942F33C">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:05:34 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Location_County_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(county)&gt;2 "/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Street" id="1E9422D7-AA2B-D534-69DC-8720D9DB2765">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:05:18 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Location_Street_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(street)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Number_of_street" id="85E872F1-FC26-C327-15D2-69CD5E977461">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:05:23 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6DEE70A2-0BE0-9FD6-1623-1E10B3FE7905" name="Location PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:35:22 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A22661F3-8FB5-D4E1-061B-9E8F4C6BF0AB</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8B721C45-58E8-3857-8D73-85FADD9DD53B" name="Location_AllAttributes_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-17 23:04:04 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<newElementsIDs>15BE2B96-B55B-48A7-1163-F9F1B76A61D5,AC4915F2-81FE-B664-0ED5-AA348942F33C,1E9422D7-AA2B-D534-69DC-8720D9DB2765,85E872F1-FC26-C327-15D2-69CD5E977461</newElementsIDs>
+<usedAttributes>
+<attributeRef>15BE2B96-B55B-48A7-1163-F9F1B76A61D5</attributeRef>
+<attributeRef>AC4915F2-81FE-B664-0ED5-AA348942F33C</attributeRef>
+<attributeRef>1E9422D7-AA2B-D534-69DC-8720D9DB2765</attributeRef>
+<attributeRef>85E872F1-FC26-C327-15D2-69CD5E977461</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

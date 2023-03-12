@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDE11AC7-BF37-F6B1-351B-264DB6EE2E33" name="Observation">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>73B24374-D92A-4B44-E03D-4DE7160ED940</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Observation_ID" id="A4DE1067-6CC7-37BA-9EF6-2DF01B9DC1EE">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>B5AEFE69-B1EF-3758-3DA5-44EDBEC4408E</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Message" id="31509F39-EC62-400A-671C-DE50BBFD24C2">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>58BBD342-3068-1FAE-19AB-B309C9759204</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Observation_Message_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(message)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Appointment_ID" id="4610C34C-D0DA-006A-B6FE-C31620FD0BF6">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-22 17:23:54 UTC</createdTime>
+<generatorID>F27ECAF4-D92B-DDCB-7CED-2CE4BAA845BB</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5423B0E-0486-4E98-73A1-52A435032598" referredColumn="FFCFBB9C-8273-670B-D0D4-9D33DF95A938"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5CF8D0E-ADD7-056A-2886-DEBDA7278883" name="Comment_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>28296A29-BC8F-F5DA-0D8A-AB279F36D7AC</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4DE1067-6CC7-37BA-9EF6-2DF01B9DC1EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06B2BBF9-40F0-E2F6-0350-DFBB16546DD9" name="Observation__IDX">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-22 17:23:54 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5C244F65-D70D-A04F-10FE-C8A33CFE0A7D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4610C34C-D0DA-006A-B6FE-C31620FD0BF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A67448A-64F9-C4F4-9FCE-7D2191AAB100" name="Appointment_Observation_FK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-22 17:23:54 UTC</createdTime>
+<generatorID>5C244F65-D70D-A04F-10FE-C8A33CFE0A7D</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4610C34C-D0DA-006A-B6FE-C31620FD0BF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

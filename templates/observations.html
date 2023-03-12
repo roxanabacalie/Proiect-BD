@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+@font-face {
+	font-family: 'SansationLight';
+	src: url('./FontSansationLight/SansationLight.eot');
+	src: local('SansationLight'), url('./FontSansationLight/SansationLight.woff') format('woff'), url('./FontSansationLight/SansationLight.ttf') format('truetype');
+}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'SansationLight' !important;
+    background: #0F1F2E;
+}
+
+/* Style tab links */
+.tablink {
+	font-weight: bold;
+	font-family: 'SansationLight' !important;
+    background-color: #306A9C;
+    color: #ffffff;
+    float: center;
+    border: #ffffff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 0px;
+    font-size: 17px;
+    width: 14%;
+}
+
+.tablink:hover {
+    background-color: #5393CA;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+table, th, td {
+    border: 1px solid #176164;
+    border-collapse: collapse;
+    border-color: white;
+    text-align: center;
+}
+th, td {
+    padding: 15px;
+}
+
+.radiotext {
+    margin: 10px 10px 0px 0px;
+}
+
+
+
+</style>
+
+<script>
+	function myFunction() {	
+  var rate_value = document.getElementsByName('observation_id');
+
+	if(rate_value[0]){
+	alert(rate_value[0].value);
+	document.getElementsByName('observation_id').value=rate_value[0].value;
+	alert(document.getElementsByName('observation_id').value);
+  }}
+</script>
+
+</head>
+<body>
+
+  <a href="volunteers"><button class="tablink" >Volunteers</button></a>
+  <a href="departments"><button class="tablink">Departments</button></a>
+  <a href="events"><button class="tablink">Events</button></a>
+  <a href="locations"><button class="tablink">Locations</button></a>
+  <a href="requirements"><button class="tablink">Requirements</button></a>
+  <a href="appointments"><button class="tablink">Appointments</button></a>
+  <a href="observations"><button class="tablink" style="background:#224A6D; color: white">Observations</button></a>
+
+  <div id="Consilieri" class="tabcontent">
+	<center>
+  		<h1 id="h3">Observații despre prezența și comportamentul voluntarilor la evenimente</h1>
+  		<br><br>
+      <div class="btn-group">
+        <a href="addObservation"><button type="button" ; class="btn btn-primary" >Adauga observații</button></a>
+        <br>
+        
+      </div>
+      <br><br><br><br>
+  		<table style="width:70%">
+
+  			<tr>
+          <th>Nr. crt</th>
+    			<th>observation_id</th>
+    			<th>message</th> 
+    			<th>appointment_id</th>
+                <th>Editare/Stergere</th>
+  			</tr>
+
+        {% for observation in observations %}
+  			<tr>
+          <td>{{loop.index}}</td>
+    			<td>{{observation["observation_id"]}}</td>
+    			<td>{{observation["message"]}}</td> 
+    			<td>{{observation["appointment_id"]}}</td>
+				
+          <td>
+                <form class="was-validated" method="POST" action="/getObservation">
+                  <button type="submit" name="observation_id" value="{{observation['observation_id']}}" class="btn btn-primary">Editeaza observatie</button>
+                </form>
+                <br>
+                <form class="was-validated" method="POST" action="/delObservation">
+                  <button type="submit" name="observation_id" value="{{observation['observation_id']}}" class="btn btn-primary">Sterge observatie</button>
+                </form>
+          </td>
+  			</tr>
+  			{% endfor %}
+		  </table>
+      <br><br><br>
+  </center>
+
+</body>
+</html> 

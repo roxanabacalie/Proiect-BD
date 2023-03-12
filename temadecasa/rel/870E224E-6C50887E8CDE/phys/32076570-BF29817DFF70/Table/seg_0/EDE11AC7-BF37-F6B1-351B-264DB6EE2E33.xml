@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Observation" directorySegmentName="seg_0" id="EDE11AC7-BF37-F6B1-351B-264DB6EE2E33">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Message" id="31509F39-EC62-400A-671C-DE50BBFD24C2">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Appointment_ID" id="4610C34C-D0DA-006A-B6FE-C31620FD0BF6">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-23 11:28:34 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Observation_ID" id="A4DE1067-6CC7-37BA-9EF6-2DF01B9DC1EE">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Observation__IDX" id="06B2BBF9-40F0-E2F6-0350-DFBB16546DD9">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-23 11:28:34 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Appointment_Observation_FK" id="3A67448A-64F9-C4F4-9FCE-7D2191AAB100">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-23 11:28:34 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Comment_PK" id="F5CF8D0E-ADD7-056A-2886-DEBDA7278883">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

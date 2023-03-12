@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_Event_BRIU" directorySegmentName="seg_0" id="BBA29956-5953-5A08-CABE-54B2441D73C8">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 18:18:53 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.StartTime <= SYSDATE ) THEN
+		RAISE_APPLICATION_ERROR( -20001,
+		'Data invalida: ' || TO_CHAR( :new.StartTime, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
+	END IF;
+	
+	IF( :new.StartTime >= :new.EndTime ) THEN
+		RAISE_APPLICATION_ERROR( -20001,
+		'Data invalida: ' || TO_CHAR( :new.EndTime, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat StartDate.' );
+	END IF;
+
+END;
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>DB2F49DB-4034-51EF-E46A-A423F2AB3665</table>
+</TriggerOraclev10g>

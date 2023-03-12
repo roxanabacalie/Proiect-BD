@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Location" directorySegmentName="seg_0" id="286FBA4E-261C-F91F-9114-73849A5CDF75">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="City" id="032C4566-E196-214E-B53A-1068C2E6025A">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Number_of_street" id="26857C12-F76F-4045-D2B3-EAEC9200A5B7">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Location_ID" id="4BFF2842-89F2-9829-2F84-B4789C3AB34D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Street" id="83023DBA-7A4F-E5D9-7E18-483E53CDB121">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="County" id="8AFF149F-7F40-1128-FFE2-0FE5F17A5D54">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Location_PK" id="96A4D874-6AC7-70A3-BEF7-2593F8B03604">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Location_AllAttributes_uk" id="46741C34-8D34-E87A-7A05-9ACFBA31D59A">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-23 11:28:34 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

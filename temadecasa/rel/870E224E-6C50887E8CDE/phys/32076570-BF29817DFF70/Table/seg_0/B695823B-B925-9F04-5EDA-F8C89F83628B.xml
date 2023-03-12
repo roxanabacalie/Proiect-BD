@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Requirement" directorySegmentName="seg_0" id="B695823B-B925-9F04-5EDA-F8C89F83628B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Event_ID" id="32D7819A-1248-A4A0-000F-127C9334D37B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Department_ID" id="3FF4494E-4635-9EFB-1879-DE79B14EA5EF">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Requirement_ID" id="7FA6C67F-8284-44DA-E143-6E2CF2CF02EC">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Number_of_volunteers" id="AAD120A1-2A31-C7B3-BBB2-9F3EF51A2F1D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Department_Requirement_FK" id="11B39E7D-C327-4EE1-EACF-5B0534B53217">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Event_Requirement_FK" id="79555AE9-B522-FA00-6A5E-C73AB3759B69">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Requirement_PK" id="B3489906-4930-2E4F-9789-0F3C1E0E214C">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:47:13 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

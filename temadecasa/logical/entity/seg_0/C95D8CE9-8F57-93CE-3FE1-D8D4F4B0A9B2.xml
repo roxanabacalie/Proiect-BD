@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C95D8CE9-8F57-93CE-3FE1-D8D4F4B0A9B2" name="Department">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 17:04:55 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Department_ID" id="9B520E7A-9594-1E55-1A94-35966A9A9C1F">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 17:05:08 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Department_Name" id="EF4BF76F-4A5F-60B1-1527-085DDD121BC6">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 17:06:08 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Department_Department_Name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Department_Name) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9B30A153-C8F6-96AA-A440-89F968472A37" name="Department_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:35:08 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9B520E7A-9594-1E55-1A94-35966A9A9C1F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0C36F8E9-2BA7-9B15-E7A6-1405EB6B2B11" name="Department_Department_Name_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-17 23:28:04 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<newElementsIDs>EF4BF76F-4A5F-60B1-1527-085DDD121BC6</newElementsIDs>
+<usedAttributes>
+<attributeRef>EF4BF76F-4A5F-60B1-1527-085DDD121BC6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

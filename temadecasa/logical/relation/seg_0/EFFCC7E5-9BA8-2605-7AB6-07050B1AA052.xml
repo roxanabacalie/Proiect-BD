@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Department_Volunteer_FK" directorySegmentName="seg_0" id="EFFCC7E5-9BA8-2605-7AB6-07050B1AA052">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:05:06 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<sourcePk>9B30A153-C8F6-96AA-A440-89F968472A37</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contine</nameOnSource>
+<nameOnTarget>face parte din</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C95D8CE9-8F57-93CE-3FE1-D8D4F4B0A9B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D9299F0C-6CAE-2336-5A17-22BAEA371732</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

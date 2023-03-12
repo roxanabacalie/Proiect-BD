@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+@font-face {
+	font-family: 'SansationLight';
+	src: url('./FontSansationLight/SansationLight.eot');
+	src: local('SansationLight'), url('./FontSansationLight/SansationLight.woff') format('woff'), url('./FontSansationLight/SansationLight.ttf') format('truetype');
+}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'SansationLight' !important;
+    background: #0F1F2E;
+}
+
+/* Style tab links */
+.tablink {
+	font-weight: bold;
+	font-family: 'SansationLight' !important;
+    background-color: #306A9C;
+    color: #ffffff;
+    float: center;
+    border: #ffffff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 0px;
+    font-size: 17px;
+    width: 14%;
+}
+
+.tablink:hover {
+    background-color: #5393CA;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+table, th, td {
+    border: 1px solid #176164;
+    border-collapse: collapse;
+    border-color: white;
+    text-align: center;
+}
+th, td {
+    padding: 15px;
+}
+
+.radiotext {
+    margin: 10px 10px 0px 0px;
+}
+
+</style>
+
+<script>
+	function myFunction() {	
+  var rate_value = document.getElementsByName('employee_id');
+
+	if(rate_value[0]){
+	alert(rate_value[0].value);
+	document.getElementsByName('employee_id').value=rate_value[0].value;
+	alert(document.getElementsByName('employee_id').value);
+  }}
+</script>
+
+</head>
+<body>
+
+  <a href="volunteers"><button class="tablink" >Volunteers</button></a>
+  <a href="departments"><button class="tablink">Departments</button></a>
+  <a href="events"><button class="tablink">Events</button></a>
+  <a href="locations"><button class="tablink" style="background: #224A6D; color: white">Locations</button></a>
+  <a href="requirements"><button class="tablink">Requirements</button></a>
+  <a href="appointments"><button class="tablink">Appointments</button></a>
+  <a href="observations"><button class="tablink">Observations</button></a>
+  
+  <div id="Consilieri" class="tabcontent">
+	<center>
+		 
+  		<h1 id="h3">Locatii</h1>
+  		<br><br>
+      <div class="btn-group">
+        <a href="addLocation"><button type="button" class="btn btn-primary" >Adauga locatii</button></a>
+        <br>
+		<br>
+		
+	
+		<form class="was-validated" method="POST" action="/getLocation">
+        
+      </div>
+      <br><br><br>
+  		<table style="width:70%">
+
+  			<tr>
+          <th>Nr. crt</th>
+    			<th>location_id</th>
+    			<th>City</th> 
+    			<th>County</th>
+    			<th>Street</th>
+    			<th>Number_of_street</th>
+                <th>Editare/Stergere</th>
+  			</tr>
+
+        {% for location in locations %}
+  			<tr>
+          <td>{{loop.index}}</td>
+    			<td>{{location["location_id"]}}</td>
+    			<td>{{location["city"]}}</td> 
+    			<td>{{location["county"]}}</td>
+    			<td>{{location["street"]}}</td>
+    			<td>{{location["number_of_street"]}}</td>
+				
+          <td>
+                <form class="was-validated" method="POST" action="/getLocation">
+                  <button type="submit" name="location_id" value="{{location['location_id']}}" class="btn btn-primary">Editeaza locatia</button>
+                </form>
+                <br>
+                <form class="was-validated" method="POST" action="/delLocation">
+                  <button type="submit" name="location_id" value="{{location['location_id']}}" class="btn btn-primary">Sterge locatia</button>
+                </form>
+				
+          </td>
+  			</tr>
+  			{% endfor %}
+		  </table>
+      <br><br><br>
+  </center>
+
+</body>
+</html> 

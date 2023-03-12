@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Department_Requirement_FK" directorySegmentName="seg_0" id="1E0D6852-9790-7E5A-F1E9-FA000F62CF9F">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:16:49 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<sourcePk>9B30A153-C8F6-96AA-A440-89F968472A37</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>este pentru</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C95D8CE9-8F57-93CE-3FE1-D8D4F4B0A9B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>06791D32-DFC4-100C-DF22-0F5C6976D4DF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

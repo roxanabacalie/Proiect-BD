@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB2F49DB-4034-51EF-E46A-A423F2AB3665" name="Event">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>AAE572EF-F81F-0819-378B-8F516315E66C</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Event_ID" id="CBF97473-C7C9-5318-3AF7-467A78348336">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>C92E4C2F-3950-B97F-C6C9-D27ACB9809CC</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartTime" id="6DE81D5A-91F0-8DE2-C9B5-E379C759342C">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>89A6379D-C311-081A-6812-39BCFED952CA</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EndTime" id="3F4EF48E-79C7-AF25-BAFF-744425719045">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>1D3EEB88-6DD2-CE41-8EAF-0275B9703AB4</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Location_ID" id="4CE5A6A7-945F-83C1-5C85-5E3BD884BC09">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>4D8A7035-00E0-0E59-3FC5-7B507AB5D30B</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8A943D5-4BA5-D090-3E6B-75C21F394743" referredColumn="4BFF2842-89F2-9829-2F84-B4789C3AB34D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30A8994D-D1E4-E529-A8A1-C9BFFD6581B7" name="Event_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>CE6D23E4-02B6-ABB1-97E2-E436B054E00D</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBF97473-C7C9-5318-3AF7-467A78348336"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEA3FD7E-D261-806F-D515-D4E5B231C453" name="Location_Event_FK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>06F198C7-BEF5-63B6-813E-9D41129BAF70</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CE5A6A7-945F-83C1-5C85-5E3BD884BC09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

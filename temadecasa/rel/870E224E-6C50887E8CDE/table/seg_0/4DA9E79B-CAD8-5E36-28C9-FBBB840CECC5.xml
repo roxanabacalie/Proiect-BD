@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DA9E79B-CAD8-5E36-28C9-FBBB840CECC5" name="Volunteer">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>D9299F0C-6CAE-2336-5A17-22BAEA371732</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Volunteer_ID" id="7E2CE3B7-6C9D-1984-46D5-F565B3E2E582">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>AD839AE4-2748-F04F-9686-7A10E86CDE33</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Last_Name" id="626335E8-A999-B14B-E694-1A7AAA99AE75">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>904AA5C9-1CF8-A818-8AFC-F4569AC275B6</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Volunteer_Last_Name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (last_name,  &apos;^[a-zA-Z]+$&apos; ) and length(last_name)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="First_Name" id="0416983F-FD1C-F3F0-74B4-ECC5A0EF0837">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>05A039DD-23EF-1E0E-0DE6-AAB5ADBCD6B1</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Volunteer_First_Name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( first_name, &apos;^[a-zA-Z]+$&apos; ) and length(first_name)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Faculty" id="41EF4B2E-E3A5-809A-A45C-2167FB1D7B4B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>CBAE33D6-4B82-AA5F-752A-737DCA95F73A</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Volunteer_Faculty_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (faculty,  &apos;^[a-zA-Z]+$&apos; ) and length(faculty)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="7AA1BCD2-BF9E-0C28-DF9E-6D63E1FF0E24">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>06A435B2-D5BC-09D3-1567-75B971DBA222</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Volunteer_Email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Phone_Number" id="BE115115-95B2-E35E-1BE3-9F70D66B33C3">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>F0E85499-3A64-EE79-CE59-A915BA7E3FD7</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Volunteer_Phone_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (phone_number,  &apos;^[0-9]+$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="City" id="35EC8D5C-571F-AEC9-E104-53777D404F5E">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>5D5B5644-3DC6-5C8A-AA8D-A0550F9C05C9</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Volunteer_City_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(city) &gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_ID" id="7D64C22F-2DFE-1C7D-41CE-5396AD1D9CB0">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>D2E34FB4-F5F0-02DD-C812-DE57F69FE4EF</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA688F7B-3328-238C-862E-BB7D22D2516E" referredColumn="7373E8C7-96B0-F381-742C-E685E25BE96D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A216B8C-3BFC-63E6-5B6C-C56AFB0E660A" name="Volunteer_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>75E34848-1317-6814-C6DD-AA5AC33F71E4</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E2CE3B7-6C9D-1984-46D5-F565B3E2E582"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FD0A396-6DF3-137D-0611-AE7105E9DE89" name="Volunteer_Phone_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-16 01:17:18 UTC</createdTime>
+<generatorID>E6F10D13-57A0-A21A-C828-103E66DB207F</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE115115-95B2-E35E-1BE3-9F70D66B33C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="967BB22D-C65B-4FF4-C446-66AAC6DF235E" name="Volunteer_Email_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-16 01:17:18 UTC</createdTime>
+<generatorID>1793AD84-5814-0F6B-A4A0-5EC589ED5777</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AA1BCD2-BF9E-0C28-DF9E-6D63E1FF0E24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76D3786B-8F6B-B374-9BC3-A87D52999F8D" name="Department_Volunteer_FK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>EFFCC7E5-9BA8-2605-7AB6-07050B1AA052</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D64C22F-2DFE-1C7D-41CE-5396AD1D9CB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

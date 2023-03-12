@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="73B24374-D92A-4B44-E03D-4DE7160ED940" name="Observation">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-18 12:50:43 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Observation_ID" id="B5AEFE69-B1EF-3758-3DA5-44EDBEC4408E">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-10 12:37:40 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Message" id="58BBD342-3068-1FAE-19AB-B309C9759204">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-18 12:55:32 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Observation_Message_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(message)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Appointment_ID" id="F27ECAF4-D92B-DDCB-7CED-2CE4BAA845BB">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-17 23:02:58 UTC</createdTime>
+<generatorID>5C244F65-D70D-A04F-10FE-C8A33CFE0A7D</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<referedAttribute>66F08A59-4B4F-EAAD-BA1B-094D541AC548</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28296A29-BC8F-F5DA-0D8A-AB279F36D7AC" name="Comment PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-10 12:37:49 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5AEFE69-B1EF-3758-3DA5-44EDBEC4408E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

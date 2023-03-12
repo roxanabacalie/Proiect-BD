@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D9299F0C-6CAE-2336-5A17-22BAEA371732" name="Volunteer">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 16:41:08 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Volunteer_ID" id="AD839AE4-2748-F04F-9686-7A10E86CDE33">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 10:14:11 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Last_Name" id="904AA5C9-1CF8-A818-8AFC-F4569AC275B6">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 16:41:23 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Volunteer_Last_Name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (last_name,  &apos;^[a-zA-Z]+$&apos; ) and length(last_name)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="First_Name" id="05A039DD-23EF-1E0E-0DE6-AAB5ADBCD6B1">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 16:42:08 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Volunteer_First_Name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( first_name, &apos;^[a-zA-Z]+$&apos; ) and length(first_name)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Faculty" id="CBAE33D6-4B82-AA5F-752A-737DCA95F73A">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 16:42:33 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Volunteer_Faculty_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (faculty,  &apos;^[a-zA-Z]+$&apos; ) and length(faculty)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="06A435B2-D5BC-09D3-1567-75B971DBA222">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 16:43:32 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Volunteer_Email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Phone_Number" id="F0E85499-3A64-EE79-CE59-A915BA7E3FD7">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-03 16:43:57 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Volunteer_Phone_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE (phone_number,  &apos;^[0-9]+$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="City" id="5D5B5644-3DC6-5C8A-AA8D-A0550F9C05C9">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:05:56 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<constraintName>Volunteer_City_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(city) &gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Department_ID" id="D2E34FB4-F5F0-02DD-C812-DE57F69FE4EF">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:05:06 UTC</createdTime>
+<generatorID>EFFCC7E5-9BA8-2605-7AB6-07050B1AA052</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<referedAttribute>9B520E7A-9594-1E55-1A94-35966A9A9C1F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75E34848-1317-6814-C6DD-AA5AC33F71E4" name="Volunteer_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-11-11 11:34:40 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AD839AE4-2748-F04F-9686-7A10E86CDE33</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E6F10D13-57A0-A21A-C828-103E66DB207F" name="Volunteer_Phone_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-16 01:15:17 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<newElementsIDs>F0E85499-3A64-EE79-CE59-A915BA7E3FD7</newElementsIDs>
+<usedAttributes>
+<attributeRef>F0E85499-3A64-EE79-CE59-A915BA7E3FD7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1793AD84-5814-0F6B-A4A0-5EC589ED5777" name="Volunteer_Email_uk">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-16 01:16:19 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="false"/>
+</engineerTo>
+<newElementsIDs>06A435B2-D5BC-09D3-1567-75B971DBA222</newElementsIDs>
+<usedAttributes>
+<attributeRef>06A435B2-D5BC-09D3-1567-75B971DBA222</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B695823B-B925-9F04-5EDA-F8C89F83628B" name="Requirement">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>06791D32-DFC4-100C-DF22-0F5C6976D4DF</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Requirement_ID" id="7FA6C67F-8284-44DA-E143-6E2CF2CF02EC">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>2621A228-10BA-D87F-AA8E-183D7276957E</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Number_of_volunteers" id="AAD120A1-2A31-C7B3-BBB2-9F3EF51A2F1D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>8F01F741-C039-0E88-B19C-CD9F9CE5CB9B</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<constraintName>Requirement_Number_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Number_of_volunteers &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Event_ID" id="32D7819A-1248-A4A0-000F-127C9334D37B">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>C5D9D634-C420-FA82-F5B3-D32A365A997A</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53A3359A-5176-2713-8EEA-907058F49D18" referredColumn="CBF97473-C7C9-5318-3AF7-467A78348336"/>
+</associations>
+</Column>
+<Column name="Department_ID" id="3FF4494E-4635-9EFB-1879-DE79B14EA5EF">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>0D425992-5605-7E2D-7E86-A7D59CEE97D2</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8CCAEC8-4F1A-64FC-521A-8518D4CAD08E" referredColumn="7373E8C7-96B0-F381-742C-E685E25BE96D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3489906-4930-2E4F-9789-0F3C1E0E214C" name="Requirement_PK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>67F429D5-2776-DBDE-E641-3D96BA333010</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FA6C67F-8284-44DA-E143-6E2CF2CF02EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11B39E7D-C327-4EE1-EACF-5B0534B53217" name="Department_Requirement_FK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>1E0D6852-9790-7E5A-F1E9-FA000F62CF9F</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FF4494E-4635-9EFB-1879-DE79B14EA5EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79555AE9-B522-FA00-6A5E-C73AB3759B69" name="Event_Requirement_FK">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:17:42 UTC</createdTime>
+<generatorID>90766D99-616F-DB1D-8772-153AAE6562A3</generatorID>
+<ownerDesignName>temadecasa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32D7819A-1248-A4A0-000F-127C9334D37B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

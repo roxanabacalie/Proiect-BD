@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Volunteer_Appointment_FK" directorySegmentName="seg_0" id="2E7029D6-5AB3-93FF-010C-2F7BF1ABEB2D">
+<createdBy>Roxana</createdBy>
+<createdTime>2022-12-15 17:07:44 UTC</createdTime>
+<ownerDesignName>temadecasa</ownerDesignName>
+<engineerTo>
+<item key="870E224E-99E4-B88B-4170-6C50887E8CDE" value="true"/>
+</engineerTo>
+<sourcePk>75E34848-1317-6814-C6DD-AA5AC33F71E4</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este programat prin</nameOnSource>
+<nameOnTarget>programeaza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D9299F0C-6CAE-2336-5A17-22BAEA371732</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DD0248E8-361B-E25D-3501-43B961C12B73</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
